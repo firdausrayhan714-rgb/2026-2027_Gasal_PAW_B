@@ -1,6 +1,5 @@
 <?php
-require 'includes/auth.php';
-require 'includes/koneksi.php';
+require 'inc.php';
 tolak_jika_login();
 
 $error = '';

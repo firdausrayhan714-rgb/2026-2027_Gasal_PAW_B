@@ -1,6 +1,5 @@
 <?php
-require 'includes/auth.php';
-require 'includes/koneksi.php';
+require 'inc.php';
 wajib_level([1]);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -42,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $judul = 'Data Barang';
-require 'includes/header.php';
+tampil_header($judul);
 
 if (($_GET['aksi'] ?? '') === 'form'):
     $id  = (int)($_GET['id'] ?? 0);
@@ -102,4 +101,4 @@ if (($_GET['aksi'] ?? '') === 'form'):
   </tbody>
 </table>
 <?php endif;
-require 'includes/footer.php'; ?>
+tampil_footer(); ?>

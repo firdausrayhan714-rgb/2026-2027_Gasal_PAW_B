@@ -1,5 +1,5 @@
 <?php
-require 'includes/auth.php';
+require 'inc.php';
 
 // unset session
 $_SESSION = [];
